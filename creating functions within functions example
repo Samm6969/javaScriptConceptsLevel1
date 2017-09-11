@@ -1,0 +1,20 @@
+ function calculateAge(yearOfBirth) {
+   var age = 2017 - yearOfBirth;
+   return age;
+ }
+
+ /*var myAge = prompt("Enter your DOB please!");
+ var finalAnswer = calculateAge(myAge);
+ console.log(finalAnswer);
+*/
+
+ function yearsUntilRetirement(name, year) {
+   var age = calculateAge(year);
+   var retirementNo = 65 - age;
+   console.log(retirementNo);
+ }
+
+var name = prompt("enter name plz");
+var DOB = prompt("now enter DOB plz");
+
+ yearsUntilRetirement(name, DOB);
