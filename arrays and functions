@@ -1,0 +1,22 @@
+var someRandomYears = [1988, 2011, 1994, 1990, 2009];
+
+function printFullAge(years) {
+  var emptyArr = [];
+  var ooutputArr = [];
+
+for(var i=0; i<years.length; i++) {
+    emptyArr[i] = 2017 - years[i];
+  }
+for (var i = 0; i<emptyArr.length; i++) {
+    if(emptyArr[i]>=18) {
+      console.log("i am above 18 and my age is " + emptyArr[i] );
+      ooutputArr.push(true);
+    } else {
+      console.log("i am a minor as my age is " + emptyArr[i]);
+      ooutputArr.push(false);
+    }
+  }
+  return ooutputArr;
+}
+var xxx1 = printFullAge(someRandomYears);
+var xxx2 = printFullAge([2009, 1988, 2011]);
